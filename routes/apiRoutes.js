@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const store = require('../Develop/db/store.js');
+const store = require('../db/store.js');
 
 // requesting the existing notes
 
@@ -28,7 +28,6 @@ router.post('/notes', (req, res) => {
             res.status(500).json(err)
         })
 })
-
 
 // delete note function route
 
